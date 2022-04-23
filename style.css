@@ -1,0 +1,318 @@
+body{
+	background-color: #FAFAFA;
+}
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+.sidebar{
+	left: 0;
+	height: 100%;
+	background-color: #E7E7E7;
+
+}
+.sidebar ul{
+	display: inline-flex;
+	height: 100%;
+	width: 100%;	
+	list-style: none;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.sidebar ul a{
+	color: #616161; 
+}
+.sidebar li{
+	padding: 15px 55px;
+}
+
+.sidebar ul li:hover a{
+	padding-left: 20px;
+	font-weight: bold;
+	padding-right: 20px;
+	color: #C67A7A;
+}
+
+.sidebar ul a i{
+	margin-right: 16px;
+}
+.search-icon{
+	height: 40px;
+	display:flex;
+	border-radius: 5px;
+}
+.search-icon button{
+	font-size: 16px;
+	padding: 10px;
+	border: none;
+	box-shadow: 0 2px 12px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
+	height: 35px;
+	color: #616161; 
+}
+.search-icon button:hover{
+	border: 1px solid #BBB9B9;
+    overflow: hidden; 
+	font-weight: bold;
+}
+.search-icon .icon{
+	height: 100%;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: white;
+	background: #616161;
+	border-radius: 0 5px 5px 0;
+}
+.main{
+	float: right;
+	right: 0;
+	width: 70%;
+	font-size: 18px;
+}
+.main i{
+	padding: 10px;
+}
+.table{
+	margin-top: 10px;
+	
+	width: 80%;
+	border-collapse: collapse;
+	margin-left: 150px;
+}
+
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:12px;
+}
+
+.table th{
+	background-color: #616161;
+	color:#ffffff;
+}
+
+.table tbody tr:nth-child(even){
+	background-color: #f5f5f5;
+}
+
+/*responsive*/
+
+@media(max-width: 500px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}}
+
+.edit a:hover{
+	color: red;
+}
+.button{
+	display: inline-flex;
+	height: 35px;
+	border: none;
+	padding: 0;
+	background: #E7E7E7;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	overflow: hidden;
+	font-size: 15px;
+	font-weight: 500;
+}
+.addButton{
+	text-align: center;
+	padding: 20px;
+}
+.addBook,
+.addBook-icon{
+	display: inline-flex;
+	align-items: center;
+	padding: 0 10px;
+	color: #616161;
+	height: 100%;
+}
+.addBook-icon{
+	background: rgba(0,0,0,0.08);
+}
+.button:hover{
+	background-color: #D3D3D3;
+}
+
+.add-form {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	
+}
+
+.add-form h1{
+	font-size: 40px;
+	padding: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	
+}
+.add-form select{
+	width: 500px;
+	height: 40px;
+}
+
+.add-form p{
+	font-size: 16px;
+	margin: 15px 0;
+}
+
+.add-form input{
+	font-size: 16px;
+	padding: 15px 10px;
+	border: 0;
+	border-radius: 5px;
+	outline: none;
+	width: 500px;
+}
+
+.add-form input:focus{
+	 box-shadow: 0 2px 12px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
+}
+.add-form input:not(:focus){
+	box-shadow: none;
+}
+.add-form button{
+	font-size: 14px;
+	font-weight: bold;
+	margin: 20px 0;
+	padding: 10px 15px;
+	width: 50%;
+	border: 0;
+	border-radius: 5px;
+	background-color: #ccc8c8;
+}
+
+.add-form button:hover{
+	color: #C67A7A;
+}
+.top h1{
+	font-size: 40px;
+	padding: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.searchbar{
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+.searchbar input{
+	width: 70%;
+	height: 50px;
+	border: 1px solid #BBB9B9;
+	border-radius: 5px 0 0 5px;
+	padding: 10px;
+}
+.searchbar span{
+	padding: 17px 20px;
+	background-color: #616161;
+	color: white;
+	border-radius: 0 5px 5px 0;
+}
+.searchbar span:hover{
+	background-color: #2B2B2B;
+}
+.search-option{
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+.search-option p{
+padding: 10px;
+}
+.search-option .radio-inline{
+padding: 15px;
+}
+.search-option .text{
+	margin-left: 7px;
+}
+.card{
+	padding: 50px;
+	background-color: #E7E7E7;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	color: #616161;
+	width: 400px;
+
+}
+.card h1{
+	text-transform: uppercase;
+	margin:0;
+	padding: 0 0 50px;
+	text-align: center;
+	font-size: 28px;
+	color: #2B2B2B;
+}
+.card label{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+.card input{
+	width: 100%;
+	margin-bottom: 20px;
+	border: none;
+	border-bottom: 1px solid #2B2B2B;
+	background: transparent;
+	outline: none;
+	height: 40px;
+}
+.card button{
+	margin-top: 25px;
+	margin-bottom: 15px;
+	outline: none;
+	border:none;
+	line-height: 1;
+	padding: 16px 25px;
+	border-radius: 30px;
+	color: white;
+	background-color: #616161;
+}
+.card button:hover{
+	background-color: black;
+	color: white;
+}
+.card .alt{
+	background-color: transparent;
+	color: #A5A5A5;
+}
+.card .alt:hover{
+	background-color: transparent;
+	color: #D96565;
+}
+
